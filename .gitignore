@@ -1,4 +1,4 @@
-ven# Django #
+# Django #
 *.log
 *.pot
 *.pyc
@@ -124,8 +124,6 @@ env
 .DS_Store
 local_settings.py
 _local_settings.py
-gunicorn-error-log
-db.sqlite3
-db copy.sqlite3
-static/
-base.html
+
+# Add again for course purpose
+!db.sqlite3

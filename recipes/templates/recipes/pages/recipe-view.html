@@ -1,19 +1,9 @@
-{% include 'recipes/partials/head.html' %}
+{% extends 'global/base.html' %}
 
-<body>
-    <!-- HEADER DA PÁGINA-->
-    {% include "recipes/partials/header.html" %}
-    <!-- BARRA DE PESQUISA -->
-    {% include "recipes/partials/search.html" %}
+{% block title %}ALTERAR | {% endblock title %}
 
-    <main class="main-content-container">
-        <div class="main-content main-content-detail container">
-            {% include "recipes/partials/recipe.html" %}
-        </div>
-    </main>
-
-    <!-- FOOTER DA PAǴINA -->
-    {% include "recipes/partials/footer.html" %}
-
-</body>
-</html>
+{% block content %}
+<div class="main-content main-content-detail container">
+    {% include 'recipes/partials/recipe.html' %}
+</div>
+{% endblock content %}
